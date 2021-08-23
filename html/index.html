@@ -1,0 +1,123 @@
+<!-- final work scope:
+- Website should be 3-4 page minimum(Home, about, contact... or what you want to do)
+- Should include forms
+- JS at least button to pop up menu in mobile view
+- must be responsive
+** inspiration(https://dribbble.com/tags/website)-->
+
+<!-- Final Project GA Malaysia -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Allison&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- farah header -->
+    <header class="farah__header__container">
+        <div class="farah__nav__bar">
+            <nav>
+                <a class="farah__header__link" href="/html/index.html"><span class="farah__sassy__font">Farah
+                        Azmi</span></a>
+            </nav>
+            <nav>
+                <a class="farah__header__link__mobile" href="/html/index.html"><span class="farah__sassy__font">Farah
+                        Azmi</span></a>
+            </nav>
+            <nav>
+                <a class="farah__header__link" href="/html/about.html">About</a>
+                <a class="farah__header__link" href="/html/contactme.html">Contact Me</a>
+                <a class="farah__header__link" href="/html/project.html">View Project</a>
+            </nav>
+            <div class="farah__nav__bar__mobile">
+                <nav>
+                    <a class="farah__header__link" href="/html/index.html"><span class="farah__sassy__font">Farah
+                            Azmi</span></a>
+                </nav>
+            </div>
+            <div class="farah__header__right__mobile">
+                <img class="hamburger__button__mobile" src="/img/hamburger.svg" alt="" />
+                <div class="farah__nav__bar__vertical__right__mobile">
+                    <a class="farah__header__link" href="/html/index.html">Home</a>
+                    <a class="farah__header__link" href="/html/about.html">About</a>
+                    <a class="farah__header__link" href="/html/contactme.html">Contact Me</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- farah image banner -->
+
+    <!-- farah intro container -->
+    <!-- <container class="farah__intro__container"> -->
+    <div class="farah__header__welcome">
+        <!-- <div><span class="farah__sassy__font">Farah Azmi</span> is a Web Developer
+                and Designer <br> based in Kuala Lumpur
+            </div> -->
+        <div class="farah__image__banner">
+            <img class="farah__image" src="/img/IMG20160912162223.jpg" alt="farah__image">
+        </div>
+        <div class="meet__farah">
+            <h1>
+                Meet <span class="farah__sassy__font__1">Farah Azmi</span> !
+            </h1>
+            <p>
+                A Web Developer | Frontend Developer
+            </p>
+        </div>
+
+    </div>
+    <!-- </container> -->
+
+    <!-- farah grid container -->
+    <div class="farah__container__grid">
+        <div class="farah__1"><img class="farah__img__grid" src="/img/yellow.jpg" alt=""></div>
+        <div class="farah__2"><img class="farah__img__grid" src="/img/www.jpg" alt=""></div>
+        <div class="farah__3"><img class="farah__img__grid" src="/img/web.jpg" alt=""></div>
+        <div class="farah__4"><img class="farah__img__grid" src="/img/web development.jpg" alt=""></div>
+        <div class="farah__5"><img class="farah__img__grid" src="/img/web design web develop.jpg" alt=""></div>
+        <div class="farah__6"><img class="farah__img__grid" src="/img/enter.jpg" alt=""></div>
+    </div>
+    <div>
+
+    </div>
+    <button id="button" onclick="openPopupMenu()">
+        Toggle popup menu
+    </button>
+    <div id="popup__bg">
+        <div id="popup__main__div">
+            <p id="js__popup">This is the magic of javascript</p>
+            <p id="javascript__desc">Learn how to create this <br> professional popup menu with Javascript</p>
+            <div id="close__popup__div" title="Close this popup menu" onclick="closePopupMenu()">
+                <p>x</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="/js/main.js"></script>
+</body>
+<footer>
+    <div class="farah__footer__template">
+        <h6>This publish for General Assembly Malaysia <span>&#169</span>2021. Any illegal reproduction of this content
+            will result in immediate legal action.</h6>
+    </div>
+
+</footer>
+
+</html>
