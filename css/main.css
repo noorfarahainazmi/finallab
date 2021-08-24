@@ -1,76 +1,68 @@
 body {
-    margin: 0;
-    font-family: 'Courier New', Courier, monospace;
-    background-color: rgb(229, 165, 165);
+  margin: 0;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: rgb(229, 165, 165);
 }
+
+header {
+  margin: 0;
+  text-align: center;
+}
+
 footer {
-    margin: 0;
+  margin: 0;
+  text-align: center;
 }
-p{
+
+p {
   font-size: 1.5em;
 }
 
-.farah__header__container {
-    /* display: flex; */
-    /* height: 4em; */
-    background-color: rosybrown;
-    /* background-image: url(/img/1.jpg);
-    background-repeat: no-repeat;
-    width: 100%; */
-}
-.farah__nav__bar {
-  display: flex;
-  justify-content: space-between;
-  padding: 14px 16px;
-  font-size: 2em;
+.farah__header__container{
+  display: block;
+  margin: 0;
   border-bottom: 2px solid rosybrown;
   background-color: rgb(169, 127, 127);
 }
-.farah__nav__bar a {
-  float: center;
+
+.farah__nav__bar {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.9em;
+}
+
+.farah__nav__bar nav {
+  float: right;
   font-weight: 300;
 }
+
 .farah__nav__bar a:hover {
   color: rgb(53, 43, 43)
 }
-/* .farah__image__banner {
-    /* position: absolue;
-    left: 10%; */
-    /* margin-top: 10%;
-    margin-left: 10%;
-    display: flex;
-    justify-content: left; */
 
-    /* height: 50em;
-    border: 5px solid #31c1ba;
-    border-radius: 50%;
-    width: 10%;
-    height: 5%;
-    position: relative;
-    left: 50%;
-    top: 10%; */
-/* } */
 .farah__image {
-    border-radius: 50%;
-    width: 100%;
-    height: 150%;
+  border-radius: 50%;
+  width: 100%;
+  height: 150%;
 }
+
 .farah__header__right__mobile {
   position: absolute;
   right: 2%;
-    
+
 }
+
 .hamburger__button__mobile {
-   width: 45px;
-   border: 2px solid rosybrown;
+  width: 45px;
+  border: 2px solid rosybrown;
 }
-.farah__nav__bar__vertical__right__mobile a:hover{
+
+.farah__nav__bar__vertical__right__mobile a:hover {
   color: rgb(53, 43, 43)
-
 }
-.farah__header__right__mobile {
 
-}
+.farah__header__right__mobile {}
+
 /* .farah__intro__container {
   display: grid;
   grid-template-columns: 2fr;
@@ -81,26 +73,26 @@ p{
 .farah__header__welcome {
   display: grid;
   grid-template-columns: 300px 900px;
-  grid-template-rows: 300px ;
+  grid-template-rows: 300px;
   grid-gap: 5%;
   font-family: 'Open Sans', sans-serif;
   font-size: 2em;
   margin-left: 10%;
   margin-top: 5%;
-  /* position: absolute;
-  top: 30%;
-  left: 35%;   */
 }
-.farah__image__banner{
+
+.farah__image__banner {
   grid-column: 1 / 2;
   grid-row: 1 /2;
 }
-.meet__farah{
+
+.meet__farah {
   grid-column: 2 / 3;
   grid-row: 1 / 2;
 }
+
 @media screen and (max-width: 600px) {
-  .farah__header__welcome{
+  .farah__header__welcome {
     display: grid;
     grid-template-columns: 1fr;
     grid-auto-rows: 100px;
@@ -108,83 +100,23 @@ p{
     font-size: 1em;
     position: absolute;
     top: 7%;
-    left: 35%;  
+    left: 35%;
   }
-  }
-.farah__sassy__font__1{
-    font-family: 'Allison', cursive;
-    font-size: 2em;
 }
+
+.farah__sassy__font__1 {
+  font-family: 'Allison', cursive;
+  font-size: 2em;
+}
+
 .farah__sassy__font {
   font-family: 'Allison', cursive;
   font-weight: 600;
 }
 
-
-/* @import url('https://fonts.googleapis.com/css2?family=Allison&display=swap'); */
-/* .navbar {
-    overflow: hidden;
-    background-color: #333;
-  }
-  
-  .navbar a {
-    float: left;
-    font-size: 16px;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  .dropdown {
-    float: left;
-    overflow: hidden;
-  }
-  
-  .dropdown .dropbtn {
-    font-size: 16px;  
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
-  }
-  
-  .navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: red;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  .dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
-  
-  .dropdown-content a:hover {
-    background-color: #ddd;
-  }
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
-  } */
-
 .farah__header__link {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 
 
@@ -196,77 +128,89 @@ p{
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: 350px;
   grid-gap: 15px;
- 
+
 }
-.farah__img__grid{
+
+.farah__img__grid {
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
-.farah__1{
+
+.farah__1 {
   grid-column: 1;
   grid-row: 1;
 }
-.farah__2{
-  grid-column: 2;
-  grid-row: 1;  
-}
-.farah__3{
-  grid-column: 3;
-  grid-row: 1; 
-}
-.farah__4{
-  grid-column: 1;
-  grid-row: 2; 
-}
-.farah__5{
-  grid-column: 2;
-  grid-row: 2;
-}
-.farah__6{
-  grid-column: 3;
-  grid-row: 2;
-  
-}
-@media screen and (min-width: 600px) {
-    .farah__header__right__mobile {
-        display: none;
-    }
-    .farah__header__link__mobile {
-      display: none;
-    }
-    .farah__header__welcome{
 
-    }
-    .farah__nav__bar__vertical__right__mobile {
-        display: none;
-    }
+.farah__2 {
+  grid-column: 2;
+  grid-row: 1;
 }
+
+.farah__3 {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.farah__4 {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.farah__5 {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.farah__6 {
+  grid-column: 3;
+  grid-row: 2;
+
+}
+
+@media screen and (min-width: 600px) {
+  .farah__header__right__mobile {
+    display: none;
+  }
+
+  .farah__header__link__mobile {
+    display: none;
+  }
+
+  .farah__header__welcome {}
+
+  .farah__nav__bar__vertical__right__mobile {
+    display: none;
+  }
+}
+
 @media screen and (max-width:600px) {
-    .farah__nav__bar a {
-        display: none;
-    }
+  .farah__nav__bar a {
+    display: none;
+  }
 }
+
 @media (max-width: 1200px) {
   .hamburger__button__mobile {
     width: 45px;
     border: 2px solid rosybrown;
- }
-  
+  }
+
 }
+
 /* @media screen and (max-width:1200px) {
   .farah__nav__bar a {
       display: none;
   }
 } */
 
-#button{
+#button {
   position: absolute;
   top: 85px;
   left: 25px;
 }
 
-#popup__bg{
+#popup__bg {
   position: fixed;
   top: 0;
   left: 0;
@@ -275,7 +219,8 @@ p{
   height: 100%;
   display: none;
 }
-#popup__main__div{
+
+#popup__main__div {
   position: fixed;
   width: 800px;
   height: 500px;
@@ -287,7 +232,8 @@ p{
   margin-top: -250px;
   margin-left: -400px;
 }
-#close__popup__div{
+
+#close__popup__div {
   position: absolute;
   width: 25px;
   height: 25px;
@@ -298,12 +244,14 @@ p{
   top: 5px;
   cursor: pointer;
 }
-#close__popup__div p{
+
+#close__popup__div p {
   margin-top: 1px;
   font-family: sans-serif;
   font-weight: bold;
 }
-#js__popup{
+
+#js__popup {
   text-align: center;
   font-size: 30px;
   font-family: sans-serif;
@@ -313,48 +261,76 @@ p{
   margin-top: 0;
   border-bottom: 2px solid black;
 }
-#javascript__desc{
+
+#javascript__desc {
   font-family: sans-serif;
-  text-align: center;
-  margin-top: 30px; 
+  text-align: left;
+  margin-top: 30px;
 }
+
 .farah__footer__template {
-    display: inline-block;
-    border-top: 2px solid rosybrown;
-    border-bottom: 2px solid rosybrown;
-    color: #fff;
-    background-color: rgb(169, 127, 127);
-    padding-top: 1%;
-    padding-left: 5%;
-    padding-right: 2%;
-     
-
-    /* margin-top: 100%; */
-    width: 100%;
+  display: inline-block;
+  border-top: 2px solid rosybrown;
+  border-bottom: 2px solid rosybrown;
+  color: #fff;
+  background-color: rgb(169, 127, 127);
+  padding-top: 1%;
+  padding-left: 5%;
+  padding-right: 2%;
+  width: 100%;
 }
 
+.banner {
+  height: 400px;
+  background-color: gray;
+  font-size: 5em;
+  text-align: center;
+  color: white;
+}
 
+/* cov-19 images */
 
+/* farrtech survey form only */
+.main {
+  margin-top: 20%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 10%;
+}
 
+#title {
+  margin-top: 40%;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  position: relative;
+  text-align: center;
+}
 
+.main__content {
+  margin: 5%;
+  border: 2px solid black;
+}
 
+.form__content {
+  padding: 5%;
+  background-color: blanchedalmond;
+}
 
+#survey__form {
+  font-family: Arial, Helvetica, sans-serif;
+}
 
+input [type="radio"] {
+  margin: 0 10px 0 10px;
+}
 
+input [type="checkbox"] {
+  margin: 0 10px 0 10px;
+}
 
+#description {
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  text-align: center;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
